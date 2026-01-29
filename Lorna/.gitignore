@@ -1,0 +1,29 @@
+# Unity 自动生成的文件和文件夹
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/UserSettings/
+
+# IDE 缓存文件
+.vs/
+.vscode/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+
+# 崩溃报告和本地缓存
+sysinfo.txt
+*.apk
+*.unitypackage
