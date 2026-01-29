@@ -1,0 +1,22 @@
+{
+    "name": "GameCreator.Runtime.Core",
+    "rootNamespace": "GameCreator.Runtime.Core",
+    "references": [
+        "Unity.InputSystem",
+        "Unity.Animation.Rigging",
+        "Unity.TextMeshPro",
+        "Unity.Mathematics",
+        "Unity.Collections",
+        "NeatoTags.CharlieMadeAThing",
+        "EscapeGame.PluginWrap"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

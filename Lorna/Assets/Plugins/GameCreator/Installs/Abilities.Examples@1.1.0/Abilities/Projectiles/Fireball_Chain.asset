@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1768305344d8452d918860176c995c1d, type: 3}
+  m_Name: Fireball_Chain
+  m_EditorClassIdentifier: 
+  m_Prefab:
+    m_Property:
+      rid: 2796956557759217674
+    usePooling: 1
+    size: 50
+    hasDuration: 1
+    duration: 1.5
+  m_VerticalDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_HorizontalDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_BackwardDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Acceleration:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Speed: 5
+  m_Frequency: 1
+  m_ProjectileRange: 5
+  m_Filters:
+  - rid: 2796956600646763195
+  - rid: 2796956602789003264
+  - rid: 2796956614469091329
+  m_Effects:
+  - rid: 2796956602789003280
+  m_EnableDeviation: 0
+  m_RandomizeDeviation: 0
+  m_LoopDeviation: 0
+  m_PierceTarget: 0
+  m_AlwaysDestroy: 0
+  m_ConstantRange: 0
+  m_Homing: 0
+  m_HomingPrecision: 10
+  references:
+    version: 2
+    RefIds:
+    - rid: 2796956557759217674
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 5273259882058248808, guid: 78ebf40616fa76c4b83e3587da34cb49, type: 3}
+    - rid: 2796956600646763195
+      type: {class: AbilityFilterSelf, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+    - rid: 2796956602789003264
+      type: {class: AbilityFilterPawnOnly, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+    - rid: 2796956602789003280
+      type: {class: AbilityEffectCompositeConditional, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+        m_Effects:
+        - rid: 2796956602789003291
+        - rid: 2796956602789003306
+        m_Description: <If timer is not up> Create Chain_Impact
+        m_Requirements:
+        - rid: 2796956602789003281
+    - rid: 2796956602789003281
+      type: {class: AbilityRequirementConditions, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+        m_Description: Timer is not up
+        m_Method: 1
+        m_Conditions:
+          m_Conditions:
+          - rid: 2796956602789003282
+    - rid: 2796956602789003282
+      type: {class: ConditionMathCompareDecimals, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Sign: 1
+        m_Value:
+          m_Property:
+            rid: 2796956602789003285
+        m_CompareTo:
+          m_Comparison: 3
+          m_CompareTo:
+            m_Property:
+              rid: 2796956602789003289
+    - rid: 2796956602789003285
+      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 11400000, guid: 169aa89565722e04a98a44b3442fdeca, type: 2}
+          m_Name:
+            m_String: timer
+            m_ID: 1792073242
+    - rid: 2796956602789003289
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0
+    - rid: 2796956602789003291
+      type: {class: AbilityEffectInstructions, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+        m_Description: Update timer
+        m_Instructions:
+          m_Instructions:
+          - rid: 2796956602789003300
+    - rid: 2796956602789003300
+      type: {class: InstructionArithmeticSubtractNumbers, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_Set:
+          m_Property:
+            rid: 2796956602789003301
+        m_Value1:
+          m_Property:
+            rid: 2796956602789003304
+        m_Value2:
+          m_Property:
+            rid: 2796956602789003305
+    - rid: 2796956602789003301
+      type: {class: SetNumberGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 11400000, guid: 169aa89565722e04a98a44b3442fdeca, type: 2}
+          m_Name:
+            m_String: timer
+            m_ID: 1792073242
+    - rid: 2796956602789003304
+      type: {class: GetDecimalGlobalName, ns: GameCreator.Runtime.Variables, asm: GameCreator.Runtime.Core}
+      data:
+        m_Variable:
+          m_TypeID:
+            m_String: number
+          m_Variable: {fileID: 11400000, guid: 169aa89565722e04a98a44b3442fdeca, type: 2}
+          m_Name:
+            m_String: timer
+            m_ID: 1792073242
+    - rid: 2796956602789003305
+      type: {class: GetDecimalTimeDeltaTime, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 2796956602789003306
+      type: {class: AbilityEffectImpact, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+        m_Impact: {fileID: 11400000, guid: f8efb1a6b69241e47b00f5ad6a1afe3a, type: 2}
+    - rid: 2796956614469091329
+      type: {class: AbilityFilterProjectile, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1

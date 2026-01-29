@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1768305344d8452d918860176c995c1d, type: 3}
+  m_Name: Fireball_Clusters
+  m_EditorClassIdentifier: 
+  m_Prefab:
+    m_Property:
+      rid: 2796956612052385859
+    usePooling: 1
+    size: 5
+    hasDuration: 1
+    duration: 6
+  m_VerticalDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 5.487006
+      outSlope: 5.487006
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.14692517
+    - serializedVersion: 3
+      time: 0.24001795
+      value: 0.48554975
+      inSlope: 0.024714231
+      outSlope: 0.024714231
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.99871826
+      value: -1.0117787
+      inSlope: -3.6852508
+      outSlope: -3.6852508
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.0490979
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_HorizontalDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_BackwardDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.0036784864
+      outSlope: 0.0036784864
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.00177
+      value: 0.0036849976
+      inSlope: 0.0036784864
+      outSlope: 0.0036784864
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Acceleration:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Speed: 6
+  m_Frequency: 1
+  m_ProjectileRange: 3
+  m_Filters:
+  - rid: 2796956614469091330
+  m_Effects:
+  - rid: 2796956612052385860
+  - rid: 2796956612052385861
+  m_EnableDeviation: 1
+  m_RandomizeDeviation: 0
+  m_LoopDeviation: 0
+  m_PierceTarget: 0
+  m_AlwaysDestroy: 1
+  m_ConstantRange: 1
+  m_Homing: 0
+  m_HomingPrecision: 10
+  references:
+    version: 2
+    RefIds:
+    - rid: 2796956612052385859
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 5273259882058248808, guid: 78ebf40616fa76c4b83e3587da34cb49, type: 3}
+    - rid: 2796956612052385860
+      type: {class: AbilityEffectDebugLog, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Message:
+          m_Property:
+            rid: 2796956612052385862
+    - rid: 2796956612052385861
+      type: {class: AbilityEffectInstructions, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Descriptor: 
+        m_Instructions:
+          m_Instructions:
+          - rid: 2796956612052385863
+    - rid: 2796956612052385862
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 
+    - rid: 2796956612052385863
+      type: {class: InstructionGameObjectInstantiate, ns: GameCreator.Runtime.VisualScripting, asm: GameCreator.Runtime.Core}
+      data:
+        m_IsExpanded: 1
+        m_Breakpoint: 0
+        m_IsEnabled: 1
+        m_GameObject:
+          m_Property:
+            rid: 2796956612052385864
+          usePooling: 1
+          size: 5
+          hasDuration: 1
+          duration: 2
+        m_Location:
+          m_Property:
+            rid: 2796956612052385865
+        m_Parent:
+          m_Property:
+            rid: 2796956612052385866
+        m_Save:
+          m_Property:
+            rid: 2796956612052385867
+    - rid: 2796956612052385864
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 8101338703311770681, guid: b3d7b74a9322caf42a6fcaa24db62eec, type: 3}
+    - rid: 2796956612052385865
+      type: {class: GetLocationSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Position: 1
+        m_Rotation: 0
+    - rid: 2796956612052385866
+      type: {class: GetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 2796956612052385867
+      type: {class: SetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 2796956614469091330
+      type: {class: AbilityFilterProjectile, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0

@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1768305344d8452d918860176c995c1d, type: 3}
+  m_Name: Fireball_Spiral
+  m_EditorClassIdentifier: 
+  m_Prefab:
+    m_Property:
+      rid: 2796956600646762776
+    usePooling: 1
+    size: 5
+    hasDuration: 1
+    duration: 10
+  m_VerticalDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.3
+      inSlope: -0.018781537
+      outSlope: -0.018781537
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.6713384
+    - serializedVersion: 3
+      time: 0.5
+      value: -0.3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.3
+      inSlope: 0.014549107
+      outSlope: 0.014549107
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.8666351
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_HorizontalDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.2
+      outSlope: 1.2
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.25
+      value: 0.3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.75
+      value: -0.3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 1.2
+      outSlope: 1.2
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_BackwardDeviation:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Acceleration:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_Speed: 5
+  m_Frequency: 3
+  m_ProjectileRange: 5
+  m_Filters:
+  - rid: 2796956602789003394
+  - rid: 2796956614469091335
+  m_Effects:
+  - rid: 2796956600646763162
+  - rid: 2796956602789003396
+  m_DeviationMultiplier: {x: 5, y: 5, z: 5}
+  m_EnableDeviation: 1
+  m_RandomizeDeviation: 0
+  m_LoopDeviation: 1
+  m_PierceTarget: 0
+  m_AlwaysExplode: 0
+  m_ConstantRange: 1
+  m_Homing: 0
+  m_HomingPrecision: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 2796956600646762776
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 5273259882058248808, guid: 78ebf40616fa76c4b83e3587da34cb49, type: 3}
+    - rid: 2796956600646763162
+      type: {class: AbilityEffectImpact, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_Impact: {fileID: 11400000, guid: 8275454552b08e5419833481b272f788, type: 2}
+    - rid: 2796956602789003394
+      type: {class: AbilityFilterSelf, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+    - rid: 2796956602789003396
+      type: {class: AbilityEffectDebugLog, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_Message:
+          m_Property:
+            rid: 2796956602789003397
+    - rid: 2796956602789003397
+      type: {class: GetStringString, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 
+    - rid: 2796956614469091335
+      type: {class: AbilityFilterProjectile, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0

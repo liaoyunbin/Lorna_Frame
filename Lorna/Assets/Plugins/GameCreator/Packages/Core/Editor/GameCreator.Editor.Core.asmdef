@@ -1,0 +1,21 @@
+{
+    "name": "GameCreator.Editor.Core",
+    "rootNamespace": "GameCreator.Editor.Core",
+    "references": [
+        "Unity.InputSystem",
+        "GameCreator.Runtime.Core",
+        "Unity.TextMeshPro.Editor",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,20 @@
+{
+    "name": "GameCreator.Editor.Inventory",
+    "rootNamespace": "GameCreator.Editor.Inventory",
+    "references": [
+        "GameCreator.Editor.Core",
+        "GameCreator.Runtime.Core",
+        "GameCreator.Runtime.Inventory"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2437c91386e48afa35b7ab05e9a4626, type: 3}
+  m_Name: G_Cut
+  m_EditorClassIdentifier: 
+  m_Animation: {fileID: 7400000, guid: 8b20a0d5bc5096d4a913c4a9d02f1205, type: 3}
+  m_AvatarMask: {fileID: 0}
+  m_BlendMode: 0
+  m_Delay: 0
+  m_Speed:
+    m_Property:
+      rid: 4321897997557039104
+  m_UseRootMotion: 0
+  m_TransitionIn: 0.1
+  m_TransitionOut: 0.1
+  m_Notifies:
+  - rid: 2796956602789003317
+  - rid: 2796956602789003318
+  references:
+    version: 2
+    RefIds:
+    - rid: 2796956602789003317
+      type: {class: NotifyAbilityActivation, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_TriggerTime: 0.272
+    - rid: 2796956602789003318
+      type: {class: AnimNotifySFX, ns: DaimahouGames.Runtime.Characters, asm: Daimahou.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_TriggerTime: 0.257
+        m_AudioClip: {fileID: 8300000, guid: a627f0e48c7aca94da881d0cdea78bda, type: 3}
+        m_AudioConfig:
+          m_Volume: 1
+          m_Pitch: {x: 1, y: 1}
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 2796956602789003319
+    - rid: 2796956602789003319
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 0}
+    - rid: 4321897997557039104
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1

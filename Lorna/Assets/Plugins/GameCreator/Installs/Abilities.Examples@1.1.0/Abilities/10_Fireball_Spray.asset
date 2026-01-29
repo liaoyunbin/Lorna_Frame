@@ -1,0 +1,220 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cffd07e2ae94dc9a933160ab9183511, type: 3}
+  m_Name: 10_Fireball_Spray
+  m_EditorClassIdentifier: 
+  m_UID:
+    m_SerializedID:
+      m_String: f3ac5ff7-d8a0-419e-94d8-f4e66039de4f
+  m_Icon: {fileID: 21300000, guid: 02b87196ce6391a4781128bac9e8a6e7, type: 3}
+  m_Range:
+    m_Property:
+      rid: 2796956600646762905
+  m_Activator:
+    rid: 2796956600646762906
+  m_Targeting:
+    rid: 4321897997557039107
+  m_Filters:
+  - rid: 2796956600646762908
+  m_Requirements: []
+  m_Effects:
+  - rid: 2796956600646762909
+  - rid: 2796956600646763178
+  - rid: 2796956600646763180
+  - rid: 2796956600646763183
+  - rid: 2796956600646763186
+  m_BetaFeature__ControllableWhileCasting: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2796956600646762905
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 9.5
+    - rid: 2796956600646762906
+      type: {class: AbilityActivatorSingle, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 1
+        m_FaceTarget: 1
+        m_Animation: {fileID: 11400000, guid: 2577ab7651a49ca43ba213c3055d36fb, type: 2}
+        m_WalkToTarget: 0
+    - rid: 2796956600646762908
+      type: {class: AbilityFilterSelf, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+    - rid: 2796956600646762909
+      type: {class: AbilityEffectProjectile, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 1
+        m_Enabled: 1
+        m_Projectile: {fileID: 11400000, guid: 040d41d4538667042939c7d864fc0a7b, type: 2}
+        m_SpawnMethod:
+          m_Property:
+            rid: 2796956612052385962
+    - rid: 2796956600646763178
+      type: {class: AbilityEffectSFX, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_MaxOccurrences: 2
+        m_AudioClip: {fileID: 8300000, guid: a627f0e48c7aca94da881d0cdea78bda, type: 3}
+        m_AudioConfig:
+          m_Volume: 0.6
+          m_Pitch: {x: 1, y: 1}
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 2796956600646763179
+    - rid: 2796956600646763179
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 0}
+    - rid: 2796956600646763180
+      type: {class: AbilityEffectCompositeDelay, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_Effects:
+        - rid: 2796956600646763181
+        m_Descriptor: 
+        m_Delay: 0.1
+    - rid: 2796956600646763181
+      type: {class: AbilityEffectSFX, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_MaxOccurrences: 2
+        m_AudioClip: {fileID: 8300000, guid: a627f0e48c7aca94da881d0cdea78bda, type: 3}
+        m_AudioConfig:
+          m_Volume: 0.4
+          m_Pitch: {x: 1, y: 1}
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 2796956600646763182
+    - rid: 2796956600646763182
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 0}
+    - rid: 2796956600646763183
+      type: {class: AbilityEffectCompositeDelay, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_Effects:
+        - rid: 2796956600646763184
+        m_Descriptor: 
+        m_Delay: 0.2
+    - rid: 2796956600646763184
+      type: {class: AbilityEffectSFX, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_MaxOccurrences: 2
+        m_AudioClip: {fileID: 8300000, guid: a627f0e48c7aca94da881d0cdea78bda, type: 3}
+        m_AudioConfig:
+          m_Volume: 0.25
+          m_Pitch: {x: 1, y: 1}
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 2796956600646763185
+    - rid: 2796956600646763185
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 0}
+    - rid: 2796956600646763186
+      type: {class: AbilityEffectCompositeDelay, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_Effects:
+        - rid: 2796956600646763187
+        m_Descriptor: 
+        m_Delay: 0.3
+    - rid: 2796956600646763187
+      type: {class: AbilityEffectSFX, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_MaxOccurrences: 2
+        m_AudioClip: {fileID: 8300000, guid: a627f0e48c7aca94da881d0cdea78bda, type: 3}
+        m_AudioConfig:
+          m_Volume: 0.25
+          m_Pitch: {x: 1, y: 1}
+          m_TransitionIn: 0
+          m_UpdateMode: 0
+          m_SpatialBlend: 0
+          m_Target:
+            m_Property:
+              rid: 2796956600646763188
+    - rid: 2796956600646763188
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 0}
+    - rid: 2796956612052385962
+      type: {class: GetSpawnMethodArc, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_SpawnPoint:
+          m_Property:
+            rid: 2796956612052385963
+        m_SpawnCount:
+          m_Property:
+            rid: 2796956612052385964
+        m_Radius:
+          m_Property:
+            rid: 2796956612052385965
+        m_ArcAngle:
+          m_Property:
+            rid: 2796956612052385966
+        m_SpawnDelay: 0.025
+        m_RandomSpawn: 1
+        m_MaxSpawnDuration: 0.15
+    - rid: 2796956612052385963
+      type: {class: GetLocationCharacterBone, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Character:
+          m_Property:
+            rid: 2796956612052385967
+        m_Bone:
+          m_IsExpanded: 1
+          m_Breakpoint: 0
+          m_IsEnabled: 1
+          m_Type: 1
+          m_Human: 17
+          m_Path: 
+        m_Rotate: 1
+    - rid: 2796956612052385964
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 12
+    - rid: 2796956612052385965
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 0.2
+    - rid: 2796956612052385966
+      type: {class: GetDecimalInteger, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 80
+    - rid: 2796956612052385967
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 4321897997557039107
+      type: {class: AbilityTargetingDirection, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 1
+        m_Distance: 5

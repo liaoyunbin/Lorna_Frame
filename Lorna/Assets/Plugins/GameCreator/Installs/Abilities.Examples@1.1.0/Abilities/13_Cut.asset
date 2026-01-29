@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cffd07e2ae94dc9a933160ab9183511, type: 3}
+  m_Name: 13_Cut
+  m_EditorClassIdentifier: 
+  m_UID:
+    m_SerializedID:
+      m_String: a578ea81-f3c9-4574-8bb0-aa53d9cdb398
+  m_Icon: {fileID: 21300000, guid: a2e021996587dfe43afe3767c43e7bf3, type: 3}
+  m_Range:
+    m_Property:
+      rid: 2796956536208621654
+  m_Activator:
+    rid: 2796956536208621657
+  m_Targeting:
+    rid: 4321898045662822411
+  m_Filters:
+  - rid: 2796956612052385983
+  m_Requirements: []
+  m_Effects:
+  - rid: 2796956602789003325
+  m_BetaFeature__ControllableWhileCasting: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2796956536208621654
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 2796956536208621657
+      type: {class: AbilityActivatorSingle, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_FaceTarget: 1
+        m_Animation: {fileID: 11400000, guid: 727d3037b9c52d74d9f33c94a62bdabc, type: 2}
+        m_WalkToTarget: 1
+    - rid: 2796956602789003325
+      type: {class: AbilityEffectImpact, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_Impact: {fileID: 11400000, guid: a651eb999da704648b139d32ddc3e905, type: 2}
+    - rid: 2796956612052385983
+      type: {class: AbilityFilterSelf, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+    - rid: 4321898045662822411
+      type: {class: AbilityTargetingDirection, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Distance: 1

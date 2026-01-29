@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cffd07e2ae94dc9a933160ab9183511, type: 3}
+  m_Name: 22_Fire_Torrent
+  m_EditorClassIdentifier: 
+  m_UID:
+    m_SerializedID:
+      m_String: b1c33e7b-a924-4ff8-8c4b-65cf2a7e50f8
+  m_Icon: {fileID: 21300000, guid: 6a631283076471044b1693c7b1258202, type: 3}
+  m_Range:
+    m_Property:
+      rid: 2796956536208621654
+  m_Activator:
+    rid: 4321897731076390924
+  m_Targeting:
+    rid: 4321897931515625490
+  m_Filters:
+  - rid: 2796956612052385983
+  m_Requirements: []
+  m_Effects:
+  - rid: 4321897755568504843
+  m_BetaFeature__ControllableWhileCasting: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 2796956536208621654
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 2796956612052385983
+      type: {class: AbilityFilterSelf, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+    - rid: 4321897731076390924
+      type: {class: AbilityActivatorChanneled, ns: DaimahouGames.Abilities.Runtime.Activators, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 1
+        m_FaceTarget: 1
+        m_GestureState: {fileID: 11400000, guid: c62c4c082853f7f4796d3ffb0d593876, type: 2}
+        m_TickPerSecond: 20
+        m_Delay: 0
+    - rid: 4321897755568504843
+      type: {class: AbilityEffectProjectile, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Enabled: 1
+        m_Projectile: {fileID: 11400000, guid: 7a798bebfacc977459e5cd332e043e36, type: 2}
+        m_SpawnMethod:
+          m_Property:
+            rid: 4321897891192111111
+    - rid: 4321897891192111111
+      type: {class: GetSpawnMethodSingle, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_SpawnPoint:
+          m_Property:
+            rid: 4321897891192111112
+        m_Direction:
+          m_Property:
+            rid: 4321897930007773217
+    - rid: 4321897891192111112
+      type: {class: GetLocationCharacterBone, ns: GameCreator.Runtime.Characters, asm: GameCreator.Runtime.Core}
+      data:
+        m_Character:
+          m_Property:
+            rid: 4321897891192111115
+        m_Bone:
+          m_IsExpanded: 1
+          m_Breakpoint: 0
+          m_IsEnabled: 1
+          m_Type: 1
+          m_Human: 17
+          m_Path: 
+        m_Rotate: 0
+    - rid: 4321897891192111115
+      type: {class: GetGameObjectPlayer, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 4321897930007773217
+      type: {class: GetDirectionTowardsTarget, ns: DaimahouGames.Runtime.VisualScripting.Direction, asm: Daimahou.Runtime.Core}
+    - rid: 4321897931515625490
+      type: {class: AbilityTargetingDirection, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        m_IsExpanded: 0
+        m_Distance: 0

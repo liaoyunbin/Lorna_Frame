@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cffd07e2ae94dc9a933160ab9183511, type: 3}
+  m_Name: 8_Fireball_Barrage
+  m_EditorClassIdentifier: 
+  m_ID:
+    m_String: fireball-barrage
+  m_Icon: {fileID: 21300000, guid: 1f44a46c62d4c904a81be87c5c1f71f9, type: 3}
+  m_Range:
+    m_Property:
+      rid: 2796956536208621654
+  m_Activator:
+    rid: 2796956536208621657
+  m_Targeting:
+    rid: 2796956598706896980
+  m_Filters:
+  - rid: 2796956598706896982
+  - rid: 2796956598706896983
+  m_Requirements: []
+  m_Effects:
+  - rid: 2796956578591014912
+  references:
+    version: 2
+    RefIds:
+    - rid: 2796956536208621654
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 10
+    - rid: 2796956536208621657
+      type: {class: AbilityActivatorSingle, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+        m_Animation: {fileID: 11400000, guid: 2577ab7651a49ca43ba213c3055d36fb, type: 2}
+        m_FaceTarget: 1
+        m_WalkInRange: 1
+    - rid: 2796956578591014912
+      type: {class: AbilityEffectImpact, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+        m_Impact: {fileID: 11400000, guid: 08d9515a0f095b745a1134ef501fccd1, type: 2}
+    - rid: 2796956598706896980
+      type: {class: AbilityTargetingLocation, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+        m_Radius:
+          m_Property:
+            rid: 2796956598706896981
+        m_TargetingMarker: {fileID: 11400000, guid: a0df335709692504fa9401372a534233, type: 2}
+        m_GroundLayer:
+          serializedVersion: 2
+          m_Bits: 1
+        m_TargetsLayer:
+          serializedVersion: 2
+          m_Bits: 1
+    - rid: 2796956598706896981
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 5
+    - rid: 2796956598706896982
+      type: {class: AbilityFilterPawnOnly, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1
+    - rid: 2796956598706896983
+      type: {class: AbilityFilterSelf, ns: DaimahouGames.Runtime.Abilities, asm: DaimahouGames.Runtime.Abilities}
+      data:
+        Enabled: 1

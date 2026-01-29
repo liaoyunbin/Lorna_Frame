@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &-4007940612387682992
+AnimatorOverrideController:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Animation
+  m_Controller: {fileID: 9100000, guid: 2c8b7312f36f04157932300782d990e0, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 3fd1b37d27b754527950ef1a42916157, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ac84e771370317540bb3fcf45ad9ab82, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbe450d809f4225ae9c2073e9268a3e, type: 3}
+  m_Name: GS_Fireball Stream
+  m_EditorClassIdentifier: 
+  m_StateMask: {fileID: 0}
+  m_Entry:
+    m_EntryClip: {fileID: 0}
+    m_EntryMask: {fileID: 0}
+  m_Exit:
+    m_ExitClip: {fileID: 0}
+    m_ExitMask: {fileID: 0}
+  m_OnChange:
+    m_Instructions: []
+  m_Controller: {fileID: -4007940612387682992}
+  m_StateClip: {fileID: 7400000, guid: ac84e771370317540bb3fcf45ad9ab82, type: 3}
+  m_Notifies:
+  - rid: 4321897984177209372
+  m_Speed:
+    m_Property:
+      rid: 4321897984177209368
+  references:
+    version: 2
+    RefIds:
+    - rid: 4321897984177209368
+      type: {class: GetDecimalDecimal, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_Value: 1
+    - rid: 4321897984177209372
+      type: {class: AnimNotifyBaseBaseGameObjectInstantiate, ns: DaimahouGames.Runtime.Characters,
+        asm: Daimahou.Runtime.Core}
+      data:
+        m_IsExpanded: 0
+        m_TriggerTime: 0.614
+        m_GameObject:
+          m_Property:
+            rid: 4321897984177209373
+          usePooling: 1
+          size: 5
+          hasDuration: 1
+          duration: 3
+        m_Location:
+          m_Property:
+            rid: 4321897984177209374
+        m_Parent:
+          m_Property:
+            rid: 4321897984177209381
+        m_Save:
+          m_Property:
+            rid: 4321897984177209376
+    - rid: 4321897984177209373
+      type: {class: GetGameObjectInstance, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+      data:
+        m_GameObject: {fileID: 46697566375734198, guid: 19834534ee877bc49be9c1c4dfb4bc25,
+          type: 3}
+    - rid: 4321897984177209374
+      type: {class: GetLocationCharacterBone, ns: GameCreator.Runtime.Characters,
+        asm: GameCreator.Runtime.Core}
+      data:
+        m_Character:
+          m_Property:
+            rid: 4321897984177209379
+        m_Bone:
+          m_IsExpanded: 1
+          m_Breakpoint: 0
+          m_IsEnabled: 1
+          m_Type: 1
+          m_Human: 17
+          m_Path: 
+        m_Rotate: 0
+    - rid: 4321897984177209376
+      type: {class: SetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 4321897984177209379
+      type: {class: GetGameObjectSelf, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
+    - rid: 4321897984177209381
+      type: {class: GetGameObjectNone, ns: GameCreator.Runtime.Common, asm: GameCreator.Runtime.Core}
