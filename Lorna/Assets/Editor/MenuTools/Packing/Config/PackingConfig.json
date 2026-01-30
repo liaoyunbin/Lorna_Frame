@@ -1,0 +1,5 @@
+﻿{
+  "PackingInConf": "Packing/unity_in.json",
+  "PackingOutConf": "Packing/unity_out.json",
+  "PackingBuildNumber": "./Packing/{0}_build_number"
+}
