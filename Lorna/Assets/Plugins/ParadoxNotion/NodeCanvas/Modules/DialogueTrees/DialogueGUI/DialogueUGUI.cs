@@ -6,7 +6,7 @@ using System.Linq;
 using UnityEngine.EventSystems;
 using NodeCanvas.Framework;
 using Sirenix.Utilities;
-using DG.Tweening;
+//using DG.Tweening;
 
 namespace NodeCanvas.DialogueTrees.UI.Examples
 {
