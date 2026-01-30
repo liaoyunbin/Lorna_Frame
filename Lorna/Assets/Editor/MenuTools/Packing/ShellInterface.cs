@@ -13,14 +13,14 @@ namespace EscapeGame.Building{
         //指令数组
         public readonly List<IBuildingCommand> ShellCmds = new(){
                                                                     new BuildingCmdVersion(),
-                                                                    new BuildCmdReimportAll(),
+                                                                    //new BuildCmdReimportAll(),
                                                                     new BuildingCmdTexture(),
                   
                                                                     new BuildingCmdExportConfig(),
                                           
                                                                      new BuildingCmdHybrid(),
                                                      
-                                                                    new BuildCmdPackSVC(),
+                                                                    //new BuildCmdPackSVC(),
                                                          
                                                                     new BuildingCmdBuildApp(),
                                                                     new BuildingCmdUploadAppSteam(),
