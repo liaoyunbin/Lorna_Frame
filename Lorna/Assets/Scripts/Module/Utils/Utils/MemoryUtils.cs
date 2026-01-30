@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using LornaGame.ModuleExtensions;
 using UnityEngine;
 using UnityEngine.Profiling;
 
-namespace LornaGame.ModuleExtensions.Utils{
+namespace LornaGame.ModuleExtensions{
     public class MemoryUtils : FrameWork_Tools.Singleton<MemoryUtils>{
         /// <summary> 
         /// 获取总内存

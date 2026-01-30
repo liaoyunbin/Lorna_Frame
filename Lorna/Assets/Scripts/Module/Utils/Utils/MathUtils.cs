@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LornaGame.ModuleExtensions.Utils{
+namespace LornaGame.ModuleExtensions{
     public static class MathUtils{
         /// <summary>
         /// 重映射

@@ -1,10 +1,9 @@
-﻿using LornaGame.ModuleExtensions;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-namespace LornaGame.ModuleExtensions.Utils
+namespace LornaGame.ModuleExtensions
 {
     public class FileUtil
     {

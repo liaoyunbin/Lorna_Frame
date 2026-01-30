@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using Object = System.Object;
 
-namespace LornaGame.ModuleExtensions.Utils{
+namespace LornaGame.ModuleExtensions{
 
     public static class StringUtils{
     #region Const

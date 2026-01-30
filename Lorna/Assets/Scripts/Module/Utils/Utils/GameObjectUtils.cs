@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using UnityEngine;
 
-namespace LornaGame.ModuleExtensions.Utils{
+namespace LornaGame.ModuleExtensions{
     public static class GameObjectUtils{
         public static void TransformZero(this GameObject gameObject, bool identityRotate = true){
             Transform tr = gameObject.transform;

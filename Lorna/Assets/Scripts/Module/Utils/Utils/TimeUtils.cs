@@ -1,5 +1,5 @@
 ﻿
-namespace LornaGame.ModuleExtensions.Utils
+namespace LornaGame.ModuleExtensions
 {
     public class TimeUtils
     {

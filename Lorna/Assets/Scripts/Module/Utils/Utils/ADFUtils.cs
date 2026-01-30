@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using LornaGame.ModuleExtensions;
 
-namespace LornaGame.ModuleExtensions.Utils{
+namespace LornaGame.ModuleExtensions{
     public static class ADFUtils{
         /// <summary>
         /// C#获取一个类在其所在的程序集中的所有子类

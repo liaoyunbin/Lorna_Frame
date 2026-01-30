@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Formatting = Newtonsoft.Json.Formatting;
 
-namespace LornaGame.ModuleExtensions.Utils{
+namespace LornaGame.ModuleExtensions{
     public static class JsonUtils{
         public static JsonSerializerSettings S_FullSetting =  new JsonSerializerSettings{ ReferenceLoopHandling = ReferenceLoopHandling.Ignore,Formatting = Formatting.Indented,TypeNameHandling = TypeNameHandling.All };
 

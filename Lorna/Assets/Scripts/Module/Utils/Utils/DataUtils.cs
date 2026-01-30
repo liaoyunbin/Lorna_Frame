@@ -2,9 +2,8 @@
 using System.Data;
 using System.IO;
 using System.Text;
-using LornaGame.ModuleExtensions;
 
-namespace LornaGame.ModuleExtensions.Utils{
+namespace LornaGame.ModuleExtensions{
     public static class DataUtils{
         public const           string   SOLIT_SIGN     = ",";
         public static readonly string[] S_ArraySpeSign ={ ",", "\"", "\\r", "\\n" };
