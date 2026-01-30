@@ -1,12 +1,9 @@
-namespace FrameWork_UI
+namespace LornaGame.UIExtensions
 {
     using System;
-    using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
-    using UnityEngine.UI;
-    using UnityEngine.UIElements;
-    using FrameWork_Tools;
+    using LornaGame.ModuleExtensions;
 
     public static class Layer
     {

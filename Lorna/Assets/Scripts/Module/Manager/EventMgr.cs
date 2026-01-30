@@ -1,4 +1,4 @@
-namespace FrameWork_Tools
+namespace LornaGame.ModuleExtensions
 {
     using System;
     using System.Collections.Generic;

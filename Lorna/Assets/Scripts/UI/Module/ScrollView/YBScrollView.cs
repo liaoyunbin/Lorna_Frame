@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FrameWork_UI
+namespace LornaGame.UIExtensions
 {
 
     // 序列化字段未被代码赋值的警告，这里屏蔽掉

@@ -1,12 +1,10 @@
-namespace FrameWork_UI
+namespace LornaGame.UIExtensions
 {
-    using FrameWork_Tools;
+    using LornaGame.ModuleExtensions;
     using System;
-    using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
     using UnityEngine.UI;
-    using UnityEngine.UIElements;
 
     //转为UTF8格式：
     public partial class UIMgr

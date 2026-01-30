@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace FrameWork_Tools
+namespace LornaGame.ModuleExtensions
 {
     /// <summary>
     /// 包装层管理类

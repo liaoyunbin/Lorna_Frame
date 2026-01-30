@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace FrameWork_UI
+namespace LornaGame.UIExtensions
 {
     public class YBScrollerItem : MonoBehaviour {
         private RectTransform m_Rt;

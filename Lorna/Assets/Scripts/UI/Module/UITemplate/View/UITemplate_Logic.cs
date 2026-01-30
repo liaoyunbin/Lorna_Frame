@@ -1,4 +1,4 @@
-namespace FrameWork_UI
+namespace LornaGame.UIExtensions
 {
     using UnityEngine.UI;
     using System.Collections;

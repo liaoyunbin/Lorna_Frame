@@ -1,5 +1,5 @@
 
-namespace FrameWork_Tools
+namespace LornaGame.ModuleExtensions
 {
     public interface ICameraManager: IMgr
     {

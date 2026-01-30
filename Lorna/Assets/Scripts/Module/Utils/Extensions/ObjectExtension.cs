@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FrameWork_UI
+namespace LornaGame.ModuleExtensions
 {
     public static class ObjectExtension
     {

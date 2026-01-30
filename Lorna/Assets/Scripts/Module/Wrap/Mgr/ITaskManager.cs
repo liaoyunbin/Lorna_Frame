@@ -1,7 +1,7 @@
 
 using System;
 
-namespace FrameWork_Tools
+namespace LornaGame.ModuleExtensions
 {
     public interface ITaskManager : IMgr
     {

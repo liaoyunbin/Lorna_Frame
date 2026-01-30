@@ -1,12 +1,9 @@
-﻿namespace FrameWork_UI
+﻿namespace LornaGame.UIExtensions
 {
     using UnityEngine.UI;
-    using System.Collections;
-    using System.Diagnostics;
+    using LornaGame.ModuleExtensions;
     using UnityEngine;
     using UnityEngine.EventSystems;
-    using FrameWork_Tools;
-    using UnityEditor.Experimental.GraphView;
 
     //转为UTF8格式：
     ///
