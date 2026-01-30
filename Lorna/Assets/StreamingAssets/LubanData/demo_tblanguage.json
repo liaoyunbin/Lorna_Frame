@@ -1,0 +1,16 @@
+[
+  {
+    "id": "menu_start",
+    "text_zh​": " \n开始游戏",
+    "text_en​": " \nStart Game",
+    "text_ja​": "スタート",
+    "desc": " \n主界面开始按钮的文本"
+  },
+  {
+    "id": "item_health_potion",
+    "text_zh​": "生命药水",
+    "text_en​": "Health Potion",
+    "text_ja​": " \nヒールポーション",
+    "desc": "恢复生命的药水"
+  }
+]
