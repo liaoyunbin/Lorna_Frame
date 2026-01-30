@@ -6,7 +6,7 @@ using SimpleJSON;
 using System.IO;
 using Unity.VisualScripting;
 
-public class LubanConfigManager : FrameWork_Tools.Singleton<LubanConfigManager>
+public class LubanConfigManager : LornaGame.ModuleExtensions.Singleton<LubanConfigManager>
 {
     private Tables m_tables;
     private System.Func<string, string, string> _currentTextMapper;

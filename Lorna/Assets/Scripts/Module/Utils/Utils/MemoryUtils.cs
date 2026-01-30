@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Profiling;
 
 namespace LornaGame.ModuleExtensions{
-    public class MemoryUtils : FrameWork_Tools.Singleton<MemoryUtils>{
+    public class MemoryUtils : Singleton<MemoryUtils>{
         /// <summary> 
         /// 获取总内存
         /// PC

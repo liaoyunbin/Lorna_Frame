@@ -100,7 +100,7 @@ namespace NodeCanvas.Editor{
                 try{
                     //旧做法，反射创建LanManager
                     // var  csharpAb  = AppDomain.CurrentDomain.GetAssemblies().First(assembly => assembly.GetName().Name == "Assembly-CSharp");
-                    // Type type      = csharpAb.GetType("EscapeGame.Manager.LanguageManager");
+                    // Type type      = csharpAb.GetType("LornaGame.ModuleExtensions.LanguageManager");
                     // var  files     = type.GetFields(BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
                     // var  insLanMgr = Activator.CreateInstance(type); //跨程序集理论不可直接createInstance,但是Editor内Exception也有Object的，只要能给反射获取实例内容，这里就不纠结先用着
                     // var  val       = files.First(t => t.Name == "_multiLan").GetValue(insLanMgr);
