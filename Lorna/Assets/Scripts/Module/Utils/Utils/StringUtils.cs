@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
-using LornaGame.ModuleExtensions;
-using LornaGame.ModuleExtensions;
 using Object = System.Object;
 
 namespace LornaGame.ModuleExtensions.Utils{
@@ -869,34 +867,34 @@ namespace LornaGame.ModuleExtensions.Utils{
         /// <param name="format"></param>
         /// <param name="length">返回结果长度</param>
         /// <returns></returns>
-        //public static string[] ToStringArray(string param, char format, int length){
-        //    if (param.IndexOf(format) < 0){
-        //        return null;
-        //    }
+        public static string[] ToStringArray(string param, char format, int length){
+            if (param.IndexOf(format) < 0){
+                return null;
+            }
 
-        //    string[]   rel       = new string[length];
-        //    int        charCount = param.Length;
-        //    int        setIndex  = 0;
-        //    List<char> charList  = ListPool<char>.Obtain();
-        //    for (int i = 0; i < charCount; ++i){
-        //        if (!param[i].Equals(format)){
-        //            charList.Add(param[i]);
-        //        }
-        //        else{
-        //            rel[setIndex] = StringUtils.ToString(charList);
-        //            setIndex++;
-        //            charList.Clear();
-        //        }
+            string[]   rel       = new string[length];
+            int        charCount = param.Length;
+            int        setIndex  = 0;
+            List<char> charList  = ListPool<char>.Obtain();
+            for (int i = 0; i < charCount; ++i){
+                if (!param[i].Equals(format)){
+                    charList.Add(param[i]);
+                }
+                else{
+                    rel[setIndex] = StringUtils.ToString(charList);
+                    setIndex++;
+                    charList.Clear();
+                }
 
-        //        if (setIndex == length - 1){
-        //            rel[setIndex] = param.Substring(i + 1, charCount - i - 1);
-        //            break;
-        //        }
-        //    }
+                if (setIndex == length - 1){
+                    rel[setIndex] = param.Substring(i + 1, charCount - i - 1);
+                    break;
+                }
+            }
 
-        //    charList.Release();
-        //    return rel;
-        //}
+            charList.Release();
+            return rel;
+        }
 
         //public static T[] ToObjectArray<T>(string param, char format)
         //{
